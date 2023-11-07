@@ -6,12 +6,12 @@ This repository contains a Docker Compose file for setting up a service to test 
 
 1. 💾 Clone this repository
     ```bash
-        git clone https://github.com/WernerLuiz92/mail_tester.git
+        git clone https://github.com/WernerLuiz92/mailhog_mail_tester.git
     ```
 2. ⚙️ Configure the desired SMTP port (default is 1025) and UI port (default is 8025) in the `.env` file.
 3. 📂 Open a terminal and navigate to the project folder.
     ```bash
-        cd mail_tester
+        cd mailhog_mail_tester
     ```
 4. 🛠️ Build the Docker image. Run in the terminal.
     ```bash
