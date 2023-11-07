@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  # SMTP Server
+  smtp:
+    build:
+      context: ./bin/mailhog
+      dockerfile: Dockerfile
+    container_name: smtp_mailhog
+    restart: 'always'
+    logging:
+      driver: 'none'
+    ports:
+      - "${SMTP_PORT:-1025}:1025"
+      - "${MAILHOG_UI_PORT:-8025}:8025"
+    volumes:
+      - ./storage/mail:/var/mailhog
