@@ -31,8 +31,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./bin/mailhog
-          file: Dockerfile
+          context: .
+          file: bin/mailhog/Dockerfile
           push: true
           tags: |
             wgottschalt92/mailhog_mail_tester:latest
