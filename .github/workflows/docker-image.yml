@@ -36,4 +36,4 @@ jobs:
           push: true
           tags: |
             wgottschalt92/mailhog_mail_tester:latest
-            wgottschalt92/mailhog_mail_tester:$(date +%s)
+            wgottschalt92/mailhog_mail_tester:${{ github.run_number }}
